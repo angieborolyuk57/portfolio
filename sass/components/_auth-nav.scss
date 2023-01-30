@@ -1,0 +1,60 @@
+/* Auth-nav links */
+ 
+.auth-nav {
+  display:none;
+
+  @media (min-width:768px){
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color:var(--main-text-color);
+
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: auto;
+  }
+
+  @media (min-width:1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+
+   flex-direction: row;
+    align-items: center;
+  } 
+}
+
+
+  .auth-item + .auth-item{
+    margin-top: 10px;
+
+    @media (min-width:1200px){
+    margin-left:40px;
+    margin-top:0;
+  } 
+}
+  .auth-item {
+  color:var(--main-text-color);
+  text-decoration:none;
+
+  transition-property: color;
+  transition-duration:250ms;
+  transition-timing-function:var( --timing-function);
+  }
+
+  .auth-item:hover,
+  .auth-item:focus {
+  color: var(--accent-color);
+  }
+
+.envelope,
+.tel-icon{
+  fill:currentColor;
+  margin-right:10px;
+
+  transition-property: fill;
+  transition-duration:250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

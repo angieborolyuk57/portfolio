@@ -1,0 +1,27 @@
+.btn {
+    border-radius: 4px;
+    padding:6px 22px;
+  
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: #F5F4FA;
+  
+    border: solid transparent;
+    cursor:pointer;
+  
+    transition-property: color, background-color, box-shadow;
+    transition-duration:250ms;
+    transition-timing-function:var(--timing-function);
+  }
+  
+  .btn:hover,
+  .btn:focus{
+    color:var(--primary-white);
+    background-color: var( --accent-color); 
+    box-shadow: 0px 4px 4px 0px #00000040;
+  }

@@ -1,0 +1,169 @@
+
+/* Footer design */
+
+.footer {
+  background-color: var( --second-background);
+  padding-bottom:60px;
+
+  &__container {
+display:flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+padding-top:60px;
+padding-bottom:60px;
+
+
+  @media screen and (min-width:768px){
+    padding-left:76px;
+    padding-right:89px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: left;
+   }
+
+@media screen and (min-width:1200px){
+  flex-direction: row;
+  flex-wrap:nowrap;
+  text-align:left;
+
+}  }
+
+  &__contacts{
+
+    font-style: normal;
+    font-size: 14px;
+    line-height:1.71;
+
+    display:flex;
+    flex-direction:column;
+
+    @media (min-width:768px){
+      margin-bottom:60px;
+    }
+
+    @media (min-width:1200px){
+      margin-bottom:0px;
+    }
+  }
+
+  &__studio{
+    color: var(--primary-white);
+  }
+
+  &__logo{
+  margin-left:auto;
+  margin-right:auto;
+  align-items: center;
+  
+    padding:0px;
+    margin-bottom: 28px;
+  }
+
+  &__address {
+    margin-top:28px;
+  margin-bottom:10px;
+  color:var(--primary-white);
+  }
+  
+  &__email{
+    margin-bottom:10px;
+  }
+  
+  &__email,
+  &__tel {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration:none;
+
+    @media (min-width:1200px){
+      text-align:left;
+    }
+  } 
+
+.container{
+  display:flex; 
+
+} }
+
+/*Socials footer sections  */
+
+
+.socials-footer{
+  width: 206px;
+  height: 80px;
+  margin-top:60px;
+  margin-bottom:60px;
+  text-align: center;
+
+  @media (min-width:768px){
+    margin-left:165px;
+    margin-top:0px;
+    margin-bottom:103px;
+  }
+
+
+  @media screen and (min-width:1200px){
+    margin-left:70px;
+    margin-top:12px;
+    margin-bottom:72px;   
+    text-align: left;
+  }
+
+  &__headline{
+    display:inline-block;
+    margin:0px;
+    margin-bottom:20px;
+    padding:0px;
+  
+    font-size: 14px;
+    line-height: 1.14;
+     line-height: 100%;
+    text-transform:uppercase;
+    color:var(--primary-white);
+
+  }
+  
+  &__list{
+    display:flex;
+    align-items: left;
+    gap:10px;
+    padding-left:0px;
+  }
+
+
+  &__link{
+    fill:var(--primary-white);
+    object-fit: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 44px;
+    height: 44px;
+    background-color: #FFFFFF1A;
+    border-radius:50%;
+  
+    transition-property: fill, background-color, border-radius;
+    transition-duration:250ms;
+    transition-timing-function: var(--timing-function);   
+  }
+
+  &__link:hover,
+&__:focus{
+  width: 44px;
+  height: 44px;
+  fill:var(--primary-white);
+  background-color: var(--accent-color);  
+  border-radius: 50%;
+}
+}
+
+
+
+
+
+
+
+
