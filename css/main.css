@@ -251,10 +251,12 @@ h3 {
   padding: 63px 24px;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: -webkit-transform 250ms;
-  transition: -webkit-transform 250ms;
-  transition: transform 250ms;
-  transition: transform 250ms, -webkit-transform 250ms;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: var(--timing-function);
           transition-timing-function: var(--timing-function);
 }
@@ -264,7 +266,7 @@ h3 {
   line-height: 1.5;
   text-align: left;
 }
-.product-cards__item:hover .product-cards__text-overlay {
+.product-cards__item:hover .product-cards__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }

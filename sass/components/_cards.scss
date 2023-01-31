@@ -7,13 +7,8 @@
       flex-wrap:wrap;
       margin:0;
       padding:0;
-  
     }
 
-    @media (min-width:1200px){
-      
-    }
-  
     &__item {
         position:relative;
         width:450px;
@@ -48,8 +43,9 @@
         overflow: hidden;
         padding: 63px 24px;
         transform:translateY(100%);
-        transition: transform 250ms;
-          transition-timing-function:var(--timing-function);
+        transition-property: transform;
+        transition-duration: 250ms;
+        transition-timing-function:var(--timing-function);
         }
         
         &__text-overlay{
@@ -59,7 +55,7 @@
         text-align:left;
         }
         
-        &__item:hover .product-cards__text-overlay{
+        &__item:hover .product-cards__overlay{
           transform:translateY(0);
         }
         
